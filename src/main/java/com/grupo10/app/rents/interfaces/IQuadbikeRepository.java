@@ -4,15 +4,14 @@
  */
 package com.grupo10.app.rents.interfaces;
 
-import com.grupo10.app.rents.entities.Quadbike;
+import com.grupo10.app.rents.model.Quadbike;
+import java.util.Locale.Category;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
 
 /**
  *
- * @author Andres
+ * @author Andrew
  */
-@Repository
-public interface IQuadbikeRepository extends CrudRepository<Quadbike, Integer> {
+public interface IQuadbikeRepository extends CrudRepository<Quadbike, Integer>  {
     
 }

@@ -4,13 +4,15 @@
  */
 package com.grupo10.app.rents.interfaces;
 
-import com.grupo10.app.rents.entities.Reservation;
+import com.grupo10.app.rents.model.Quadbike;
+import com.grupo10.app.rents.model.Reservation;
+import java.util.Locale.Category;
 import org.springframework.data.repository.CrudRepository;
 
 /**
  *
- * @author Andres
+ * @author Andrew
  */
-public interface IReservationRepository extends CrudRepository<Reservation, Integer> {
+public interface IReservationRepository extends CrudRepository<Reservation, Integer>  {
     
 }

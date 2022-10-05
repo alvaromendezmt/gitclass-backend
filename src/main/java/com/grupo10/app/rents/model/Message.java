@@ -2,10 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.grupo10.app.rents.entities;
+package com.grupo10.app.rents.model;
 
 import java.io.Serializable;
-import java.sql.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,33 +18,24 @@ import lombok.Setter;
 
 /**
  *
- * @author Andres
+ * @author Andrew
  */
 @Entity
-@Table(name="tb_reservation")
-@Getter @Setter
+@Table(name="tb_message")
+@Getter 
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Reservation implements Serializable {
-
+public class Message implements Serializable {
     @Id
     @GeneratedValue(strategy =GenerationType.IDENTITY)
-    @Column(name="id")    
-    private Integer idReservation;
+    @Column(name="id")
+    private Integer idMessage;
     @Column
-    private Date startDate;
+    private String messageText;
     @Column
-    private Date devolutionDate;    
+    private Quadbike quadbike;
     @Column
-    private String status;
-    @Column
-    private Quadbike quadbike;  
-    
-    @Column
-    private Client client;  
-    
-    @Column
-    private String score;  
-    
-    
+    private Client client;
+
 }

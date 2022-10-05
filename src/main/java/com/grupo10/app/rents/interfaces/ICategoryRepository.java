@@ -4,13 +4,15 @@
  */
 package com.grupo10.app.rents.interfaces;
 
-import com.grupo10.app.rents.entities.Category;
+import com.grupo10.app.rents.model.Category;
+import com.grupo10.app.rents.model.Quadbike;
+import com.grupo10.app.rents.model.Client;
 import org.springframework.data.repository.CrudRepository;
 
 /**
  *
- * @author Andres
+ * @author Andrew
  */
-public interface ICategoryRepository extends CrudRepository<Category, Integer> {
+public interface ICategoryRepository extends CrudRepository<Category, Integer>  {
     
 }

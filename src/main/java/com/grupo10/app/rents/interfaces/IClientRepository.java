@@ -4,13 +4,15 @@
  */
 package com.grupo10.app.rents.interfaces;
 
-import com.grupo10.app.rents.entities.Client;
+import com.grupo10.app.rents.model.Client;
+import com.grupo10.app.rents.model.Quadbike;
+import java.util.Locale.Category;
 import org.springframework.data.repository.CrudRepository;
 
 /**
  *
- * @author Andres
+ * @author Andrew
  */
-public interface IClientRepository extends CrudRepository<Client, Integer> {
+public interface IClientRepository extends CrudRepository<Client, Integer>  {
     
 }

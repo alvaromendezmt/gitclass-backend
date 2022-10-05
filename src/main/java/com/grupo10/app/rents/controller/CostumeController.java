@@ -19,11 +19,11 @@ public class CostumeController {
     
     @GetMapping("/all")
     public String getCostumes(){
-        return "costume 1, costume 2....";
-    }
-    
+        return "costume 1, costume 2";
+            }
+        
     @PostMapping("/save")
     public String createCostume(){
-        return "crated....";
-    }
+        return "created ...";
+            }
 }
