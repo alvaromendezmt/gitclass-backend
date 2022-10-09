@@ -5,6 +5,7 @@
 package com.grupo10.app.rents.controller;
 
 import com.grupo10.app.rents.interfaces.IQuadbikeRepository;
+import com.grupo10.app.rents.model.Category;
 import com.grupo10.app.rents.model.Quadbike;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +37,9 @@ public class QuadbikeController {
          @PostMapping("/save")
     public String createQuadbike(@RequestBody Quadbike request){
         
+        Category category =new Category();
+        category = request.getCategory();
+        request.setCategory(category);
         repository.save(request);
                 return "created";
        
